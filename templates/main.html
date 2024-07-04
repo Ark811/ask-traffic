@@ -1,9 +1,15 @@
-<h2>Hi {{r}}, how can I help you today?</h2>
+<h2>Hi {{r}}, how can I help you today</h2>
 
 <form action="/traffic_thailand" method="post">
-    <p><input type="submit"value="Traffic in Thailand"> </p>
-</form>
-<form action="/traffic_singapore" method="post">
-    <p><input type="submit"value="Traffic in Singapore"> </p>
+    <p><input type="submit" value="Traffic in Thailand"></p>
 </form>
 
+<form action="/traffic_singapore" method="post">
+    <p><input type="submit" value="Traffic in Singapore"></p>
+</form>
+
+<h4><p>Or Key in the country you wanted to know about the traffic : </p></h4>
+<form action="/traffic_others" method="post">
+    <p><input type="text" name="q"></p>
+    <p><input type="submit" value="Enter"></p>
+</form>
