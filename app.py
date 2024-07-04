@@ -32,7 +32,7 @@ def traffic_singapore():
 @app.route("/traffic_others", methods=["GET","POST"])
 def traffic_others():
     q = request.form.get("q")
-    q = q + " traffic"
+    q = q
     r = palm.chat(**model, messages=q)
     return(render_template("traffic_thailand.html",r=r.last))
 
